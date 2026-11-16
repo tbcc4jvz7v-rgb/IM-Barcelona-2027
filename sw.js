@@ -1,1 +1,16 @@
-const CACHE="ironman-pwa-v1";const FILES=["./","./index.html","./manifest.webmanifest","./icon.svg"];self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(a=>Promise.all(a.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));self.addEventListener("fetch",e=>{if(e.request.method!=="GET")return;e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(v=>{let c=v.clone();caches.open(CACHE).then(x=>x.put(e.request,c));return v}).catch(()=>caches.match("./index.html"))))});
+const CACHE='ironman-barcelona-rebuilt-v6';
+const ASSETS=['./','./index.html','./app.js','./training-plan.json','./manifest.webmanifest','./icon.svg'];
+self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));});
+self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('ironman-barcelona-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
+self.addEventListener('fetch',event=>{
+  const req=event.request;
+  if(req.method!=='GET'||new URL(req.url).origin!==self.location.origin)return;
+  event.respondWith((async()=>{
+    const cache=await caches.open(CACHE);
+    if(req.mode==='navigate'||/\/(app\.js|index\.html|training-plan\.json)$/.test(new URL(req.url).pathname)){
+      try{const result=await fetch(req);if(result.ok)cache.put(req,result.clone());return result;}catch(err){return await cache.match(req)||await cache.match('./index.html')||Response.error();}
+    }
+    const cached=await cache.match(req);if(cached)return cached;
+    try{const result=await fetch(req);if(result.ok)cache.put(req,result.clone());return result;}catch(err){return Response.error();}
+  })());
+});

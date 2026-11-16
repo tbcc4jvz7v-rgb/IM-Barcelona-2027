@@ -1,11 +1,11 @@
 {
-  "name": "IRONMAN Barcelona 2027 Training Log",
-  "short_name": "IRONMAN Log",
+  "name": "IRONMAN Barcelona 2027 Training Tracker",
+  "short_name": "IRONMAN Tracker",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0b1423",
   "theme_color": "#101d32",
-  "description": "Personal IRONMAN training dashboard and session log.",
   "icons": [
     {
       "src": "icon.svg",

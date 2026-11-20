@@ -128,7 +128,7 @@ async function loadSchedule(){
   try{
     const response=await fetch(DATA_URL,{cache:'no-store'});if(!response.ok)throw new Error('HTTP '+response.status);
     const data=await response.json();
-    if(data.schema!=='ironman-barcelona-2027-daily-plan-v2'||!Array.isArray(data.days)||data.days.length!==322||!data.gymProgramme)throw new Error('Unexpected schedule format');
+    if(!['ironman-barcelona-2027-daily-plan-v2','ironman-barcelona-2027-daily-plan-v3'].includes(data.schema)||!Array.isArray(data.days)||data.days.length!==322||!data.gymProgramme)throw new Error('Unexpected schedule format');
     plan=data.days;byDate=new Map(plan.map(d=>[d.date,d]));gymProgramme=data.gymProgramme;
     $('scheduleStatus').textContent='Rebuilt programme loaded · '+data.startDate+' to '+data.endDate+' · offline-ready after first full load';
   }catch(err){

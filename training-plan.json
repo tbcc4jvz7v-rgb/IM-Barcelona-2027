@@ -5635,16 +5635,16 @@
       "priority": "Core",
       "swimMinutes": 0,
       "bikeMinutes": 0,
-      "runMinutes": 120,
+      "runMinutes": 135,
       "gymMinutes": 40,
-      "plannedMinutes": 160,
-      "sessions": "Long easy run + Upper B",
+      "plannedMinutes": 175,
+      "sessions": "Long easy run 2h15 + Upper B (reduced)",
       "swim": "",
       "bike": "",
-      "run": "Long easy run (RPE 3–4/10), smooth conversational effort. Time cap matters more than kilometres.",
+      "run": "Conditional long easy run 2h15, conversational RPE 3–4. Stop earlier if recovery, technique or back symptoms deteriorate.",
       "gym": "Upper B",
       "gymDetails": "Plate-loaded shoulder press: 2 × 8–10; Assisted pull-ups: 2 × 8; ISO lateral chest press machine: 2 × 10; Face pull: 2 × 12; Dumbbell lateral raise: 1 × 12; Triceps rope pushdown: 1 × 12; Dumbbell hammer curl: 1 × 12; Side plank: 1 × 30 s/side. All ~2–3 reps in reserve.",
-      "notes": "Keep running easy; shorten upper-body accessories if the long run or swimming suffers.",
+      "notes": "First long-run extension, conditional on training tolerance. Shorten gym accessories; no intensity.",
       "milestone": null
     },
     {
@@ -5759,19 +5759,19 @@
       "week": 38,
       "phase": "IRONMAN build",
       "priority": "Core",
-      "swimMinutes": 65,
+      "swimMinutes": 100,
       "bikeMinutes": 75,
       "runMinutes": 0,
       "gymMinutes": 0,
-      "plannedMinutes": 140,
-      "sessions": "Aerobic bike + swim endurance",
-      "swim": "Race-specific steady aerobic swim: longer 400–800 m segments or supervised continuous 2000–3500 m when ready; never force distance at poor form.",
+      "plannedMinutes": 175,
+      "sessions": "Peak swim rehearsal 3.8–4.0 km + aerobic bike",
+      "swim": "Peak endurance swim: target 3,800–4,000 m (including warm-up and cool-down), preferably pool; no forced distance or hard effort. Continuous 3.8 km optional only with sufficient progression and safe supervision. Prioritise technique and confidence.",
       "bike": "Steady aerobic ride; add 2–3 × 10–15 min controlled race-effort practice if fresh. Short aero blocks only after bike fit.",
       "run": "",
       "gym": "",
       "gymDetails": "",
-      "notes": "Separate sessions if possible. Indoor cycle is fine in unsafe winter road conditions.",
-      "milestone": null
+      "notes": "Replace the normal swim with a longer race-distance rehearsal. If not ready, keep the shorter previous swim. Adjust Wednesday bike down if needed.",
+      "milestone": "SWIM PEAK: 3.8–4.0 km controlled total swim; conditional on 3.5 km readiness."
     },
     {
       "id": "2027-08-05",
@@ -5929,17 +5929,17 @@
       "priority": "Core",
       "swimMinutes": 0,
       "bikeMinutes": 0,
-      "runMinutes": 120,
+      "runMinutes": 145,
       "gymMinutes": 40,
-      "plannedMinutes": 160,
-      "sessions": "Long easy run + Upper B",
+      "plannedMinutes": 185,
+      "sessions": "Peak long run 2h25 + Upper B (minimal)",
       "swim": "",
       "bike": "",
-      "run": "Long easy run (RPE 3–4/10), smooth conversational effort. Time cap matters more than kilometres.",
+      "run": "Peak long easy run 2h25 (maximum 2h30 if feeling good), strictly comfortable effort, no pace target or need for race-distance run.",
       "gym": "Upper B",
       "gymDetails": "Plate-loaded shoulder press: 2 × 8–10; Assisted pull-ups: 2 × 8; ISO lateral chest press machine: 2 × 10; Face pull: 2 × 12; Dumbbell lateral raise: 1 × 12; Triceps rope pushdown: 1 × 12; Dumbbell hammer curl: 1 × 12; Side plank: 1 × 30 s/side. All ~2–3 reps in reserve.",
-      "notes": "Keep running easy; shorten upper-body accessories if the long run or swimming suffers.",
-      "milestone": null
+      "notes": "Cap longest run at 2h30. Shorten or omit upper-body accessories if fatigue accumulates. Not a mandatory test.",
+      "milestone": "RUN PEAK: 2h15–2h30 easy, conditional on recovery."
     },
     {
       "id": "2027-08-13",
@@ -6144,12 +6144,12 @@
       "plannedMinutes": 375,
       "sessions": "KEY RACE REHEARSAL · 5h45 bike + 30m easy run",
       "swim": "",
-      "bike": "Conditional key rehearsal: 5 h 45 min aerobic bike at RPE 3–4/10. Use your planned race kit and aero position in comfortable blocks; rehearse 60–90 g carbohydrate/hour only if gradually tolerated, and measure fluid and sodium needs in the conditions. Easy aerobic RPE 3–4; no hard finish.",
-      "run": "Immediately after riding, 30 min very easy run or run-walk (RPE 2–3). Practise T2; stop or shorten if form deteriorates.",
+      "bike": "KEY RACE REHEARSAL: 5h45 relaxed endurance ride; conditional distance checkpoint 150–160 km only if sustainable at comfortable race effort. Practise fuelling, fluids, position, handling and equipment. Do not chase speed to hit distance.",
+      "run": "Optional 0–30 min gentle bike-to-run transition; stop if tired or under-fuelled.",
       "gym": "",
       "gymDetails": "",
-      "notes": "Exception to normal 5-hour Sunday limit: 6 h 15 total. Only attempt if the preceding 4–4.5 h rides have been comfortable, well-fuelled and recovered from. If not, substitute 4 h 30 bike + 15 min run and log Modified. No need to reach 180 km.",
-      "milestone": "Key race rehearsal: measure sustained comfort, aero fit, hydration, eating and running ease. Never make up a missed rehearsal."
+      "notes": "Sunday exception: max 6h15. Bike duration 5h45 is primary; 150–160 km is a conditional checkpoint, never a required speed target. Alternative 4h30 bike + 15m jog. Monday reduced if needed.",
+      "milestone": "BIKE PEAK: 150–160 km if achievable at steady effort; race-fuelling rehearsal. 180 km practice ride not required."
     },
     {
       "id": "2027-08-23",
@@ -7034,5 +7034,6 @@
       "milestone": null
     }
   ],
-  "planRevision": "2026-11-20: conditional 6h15 peak brick, cut final pre-taper brick, reduced post-rehearsal ride, revised taper ride, optional supervised open-water technique and race-effort bike blocks."
+  "planRevision": "Peak swim 3.8–4.0 km; 150–160 km conditional bike; longest run 2h15–2h30; 22 Aug rehearsal. November 21 2026.",
+  "appEdition": "Road to Barcelona v3.0"
 }

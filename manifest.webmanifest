@@ -1,17 +1,1 @@
-{
-  "name": "IRONMAN Barcelona 2027 Training Tracker",
-  "short_name": "IRONMAN Tracker",
-  "start_url": "./",
-  "scope": "./",
-  "display": "standalone",
-  "background_color": "#0b1423",
-  "theme_color": "#101d32",
-  "icons": [
-    {
-      "src": "icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ]
-}
+{"name":"Road to Barcelona — IRONMAN 2027","short_name":"Barcelona Quest","start_url":"./index.html","scope":"./","display":"standalone","background_color":"#06131c","theme_color":"#06131c","icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}

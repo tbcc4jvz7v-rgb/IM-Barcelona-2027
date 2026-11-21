@@ -1,4 +1,4 @@
-const CACHE='road-to-barcelona-v3-20261121-1';
+const CACHE='road-to-barcelona-v3-safearea-20261121-2';
 const STATIC=['./','./index.html','./style.css','./app.js','./training-plan.json','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(STATIC)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
